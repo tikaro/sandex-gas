@@ -3,12 +3,11 @@ function onOpen() {
   
   var ss = SpreadsheetApp.getActiveSpreadsheet()
   var entries = [{  
-    name: "Refresh Sandex", 
+    name: "getForecast", 
     functionName: "getForecast"
   }];
 
-  ss.addMenu("DARK SKY", entries).addToUi(); // Google function for adding menu to open sheet
-
+  ss.addMenu("Sandex", entries).addToUi();
 };
 
 // Clear sheet contents
